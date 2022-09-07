@@ -205,7 +205,7 @@ header .navbar li a:hover{
     text-transform: capitalize;
 }
 .contenu p:nth-child(2){
-    color: #ffff;
+    color: rgb(7, 7, 7);
     font-size: 1.2em;
 }
 
@@ -831,7 +831,9 @@ header.sticky .menuToggle{
     background-image:url(/images/Essaie.PNG);
     background-size: cover;
 }
-
+.contenu p:nth-child(2){
+    color: rgb(250, 245, 245);
+}
 .banniere .contenu h2{
     font-size: 3em;
 }
