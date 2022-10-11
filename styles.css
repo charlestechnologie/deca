@@ -277,13 +277,29 @@ header .navbar .menu-deroulant:hover > .sous-menu {
     border-radius: 10%;
     margin-left: 200px;
     margin-bottom: 30px;
+    background:#000 ;
+}
+.qui{
+animation: glisses 7s 1;
+}
+@keyframes glisses {
+    0%{
+        transform: translate(-250px);
+    }
+    50%{
+        transform: translate(0px);
+    }
+    
 }
 .qui p{
     font-size: 1.8rem;
     margin: 20px 10px;
+    color: #fafafa;
 }
 .sommes a{
     margin-left: 40px;
+    text-decoration: underline;
+    color: #fff;
 }
 /* media query */
 @media screen and (max-width: 1120px) {
@@ -316,7 +332,6 @@ header .navbar .menu-deroulant:hover > .sous-menu {
 .menu{
     margin-top: -200px;
     border-radius: 20%;
-
 }
 
 .menu .contenu{
@@ -324,6 +339,7 @@ header .navbar .menu-deroulant:hover > .sous-menu {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 40px;
+    width: 1350px;
 }
 .menu .contenu .boite{
     width: 340px;
@@ -611,14 +627,13 @@ header .navbar .menu-deroulant:hover > .sous-menu {
     padding-left:51.3vw;
 }
 @media (max-width:900px) {
- @media (max-width:900px) {
     .contact-deca a{
         text-decoration: none;
         color: #fff;
         padding-left: 22vw;
         font-size: 4vw;
     }
-}
+    
 }
 .contact-deca i{
 color: #fafafa;
