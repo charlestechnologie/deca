@@ -1,231 +1,52 @@
-*{
-    padding: 0;
-    margin: 0;
+.souvenir{
+    width:auto;
+    display: flex; 
 }
-
-.navbar{
-    margin-top: 10px;
-    padding: 50px;
-    padding-bottom: 50px;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    color: #efefef;
-    z-index: 80;
+.images{
+margin: 5px;
 }
-
-.navbar-toggler{
-    background-color: #fff;
-    color: white;
-    z-index: 70;
-}
-.navbar p{
-    text-align: left;
-}
-
-.navbar-brand{
-    margin-left: 30px;
-    padding: 10px 10px;
-    font-size: 26px;
-    color: #fff!important;
-    font-family: sans-serif;
-}
-.deca{
-    width: 110px;
-}
-header{
-    background-image: linear-gradient(rgba(104, 89, 89, 0.7),rgba(0,0,0,0.5)),url(images/IMG-20220812-WA0034.jpg);
-    margin-top: 0;
-    margin-bottom: 15px;
-}
-header.carousel-item{
-    top: 20%;
-}
-header p {
-    margin-left: 10px;
-}
-header  img{
-    top: 10%;
-    opacity: 0.5;
-}
-header .carousel-caption{
-    top: 40%;
-    transform: rotateY(50%);
-    bottom: initial!important;
-}
-.d-block{
-    height: 700px;
-}
-.nav-item{
-    padding: 0 15px;
-}
-
-.nav-link{
-    text-transform: uppercase;
-    color: #fff!important;
-    font-weight: 600;
-    font-size: 15px;
-}
-.nav-link:hover{
-    color: #ccc!important;
-}
-section .pub h1 p{
-    margin-left: 20px;
-}
- .carousel-caption{
-    top: 50%;
-    transform: rotateY(50%);
-    bottom: initial!important;
-}
-.carousel-caption{
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-}
-
-.carousel-caption h1{
-    font-size: 56px;
-    color: black;
-
-}
-.carousel-caption h4{
-    color: black;
-    font-size: 40px;
-}
-
-/* a propos de nous */
-#apropos{
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-#apropos h2{
-    padding-bottom: 20px;
-}
-#apropos .btn{
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: #555;
-}
-.progress{
-    border-radius: 16px;
-    margin-bottom: 10px ;
-}
-.progress-bar{
-    border-radius: 16px;
-}
-#contact h6{
-    margin-top: 15px;
-}
-h4{
-    margin-left: 10px;
-
-}
-form input,form textarea{
-    display: block;
-    margin-top: 20px;
-    margin-left: 10px;
-    padding: 10px;
-    width: 300px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    border-radius: 5px;
-    border-width: 1px;
-    border-style: solid;
-}
-form button{
-    margin-left: 15px;
-    border-radius: 5px;
-}
-/* section services */
-#services{
-    margin-top: 10px;
-    padding: 50px;
-    padding-bottom: 50px;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.5)),url(images/IMG-20220812-WA0034.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    margin-bottom: 100px;
-    color: #efefef;
-}
-#services h2{
-    text-align: center;
-    font-weight: bold;
-}
-#services h2::after{
-    content:"" ;
-    display: block;
-    background: #efefef!important;
-    height: 3px;
-    width: 120px;
-    margin: 20px auto 5px;
-}
-.service{
-    margin-right: 30px;
-    padding: 20px;
-}
-div.pied{
-    background-color: #717171;
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    width:3%;
-    height: 5%;
-}
-.pied .one{
-    background-color: #f8fafc;
-    margin: 5px;
-}
-.pied .pie{
-    width: 100px;
-    height: 80px;
+text p{
+    margin: 5px 5px 5px 5px;
+    font-weight: 800;
+    font-size: 1.5rem;
 }
 .gallerie{
-    width: 150px;
-    height: 200px;
+    width: 300px;
 }
-@media screen and (max-width:1152px){
-    body{
-        margin-left: 5px!important;
-   }
-
-    .deca{
-        width: 100px;
-        margin-left: 5px;
-        height: 50px;
-    }
- 
-    .navbar-brand{
-        margin-left: 15px;
-        padding: 20px 20px;
-        font-size: 15px;
-        color: #fff!important;
-        font-family: sans-serif;
-    }
-    .nav-link{
-        text-transform: uppercase;
-        color: #fff!important;
-        font-weight: 600;
-        font-size: 15px;
-    }
-    .nav-item{
-        padding: 0 
-    }
-    .d-block{
+.gallerie1{
+    width: 298px;
+}
+.gallerie2{
+    width: 280px;
+    height: 200px;
+    margin: 5px;
+}
+.gallerie:hover{
+    transform: scaleY(0.95);
+    transition: 0.5s;
+}.gallerie1:hover{
+    transform: scaleY(0.95);
+    transition: 0.5s;
+}.gallerie2:hover{
+    transform: scaleY(0.95);
+    transition: 0.5s;
+}
+@media (max-width:800px) {
+    .souvenir{
         width:auto;
-        height:auto;
+        display: flex;   
+    } 
+    .images{
+        margin: 5px;
     }
-    .carousel-caption{
-        background: rgba(255, 255, 255, 0.5);
-        border-radius: 16px;
-        align-items: center;
+    .gallerie{
+        width: 150px;
     }
-    header .carousel-caption  h1{
-        font-size: 16px;
+    .gallerie1{
+        width: 145px;
     }
-    .carousel-caption  h1{
-        font-size: 20px;
-    }
-    .carousel-caption h4{
-        font-size: 13px;
+    .gallerie2{
+        width: 143px;
+        height: 98px;
     }
 }

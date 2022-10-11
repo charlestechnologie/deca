@@ -11,7 +11,7 @@ p{
     font-weight: 300;
     color: #111;
 }
-
+/* header */
 header{
     position: fixed;
     top: 0%;
@@ -25,9 +25,11 @@ header{
     transition: 0.5s;
 }
 .deca{
-    width: 200px;
-    height: 80px;
+    top: 0;
+    width: 150px;
+    float: left;
 }
+
 .logo{
     color: #fff;
     font-weight: bold;
@@ -40,18 +42,7 @@ header{
 .btn{
     color: #f2f4f7;
 }
-.btn :hover{
-    background: #d87710;
-    transition: ease-out;
-}
 
-
-.btn-reserve{
-    padding: 10px 20px;
-    background: #fb911f;
-   margin-top: -10px;
-   text-transform:uppercase ;
-}
 .nous{
     text-align: center;
     font-size: 2rem;
@@ -80,7 +71,10 @@ header .navbar li a:hover{
 }
 .navbar{
     display: flex;
+    flex-wrap: wrap;
     position: relative;
+    float:right;
+    margin-top: 60px;
 }
 .navbar li{
     list-style: none;
@@ -90,6 +84,7 @@ header .navbar li a:hover{
     text-decoration: none;
     margin-left: 15px;
     font-weight: 800;
+    background-color: none;
 }
 /* menu */
 /* :root{
@@ -146,6 +141,7 @@ header .navbar li a:hover{
     border-radius: 2px;
     overflow: hidden;
     max-height: 0;
+    background-color: none;
   }
   
   .sous-menu > li > a {
@@ -196,7 +192,7 @@ header .navbar li a:hover{
   }
   /* banniere */
 .banniere .contenu{
-    max-width: 70%;
+    max-width: 80%;
     text-align: center;
 }
 .banniere .contenu h2{
@@ -288,6 +284,85 @@ section{
     flex-direction: column;
 }
 
+
+
+
+/* nos projets */
+
+.menu{
+    margin-top: -200px;
+    border-radius: 20%;
+
+}
+
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.menu .contenu .boite{
+    width: 340px;
+    border-radius: 20%;
+    margin: 20px;
+    border: 2px solid #fff;
+    /* box-shadow: 20px 15px 35px rgba(0,0,0, 0.8); */
+    background-color: none;
+} 
+.menu .contenu .boite .imbox{
+    position: relative;
+    width: 100%;
+    height: 340px;
+}
+ .menu .contenu .boite .imbox img{
+    position: relative;
+    border-radius: 20%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.6;
+} 
+.imbox{
+    height: 100%;
+    background-color: none;
+}
+.imbox h1{
+    text-align: right;
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-size: 2rem;
+}
+.imbox h5{
+    margin-top: -250px;
+    text-align: center;
+    z-index: 100;
+    font-size:5.5rem ;
+    color: #050505;
+    text-decoration: 3px underline;
+}
+.imbox p{
+    font-size: 1.15rem;
+} 
+ /*nos projets  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .menu{
     margin-top: -100px;
 }
@@ -295,7 +370,7 @@ section{
 .menu .contenu{
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     margin-top: 40px;
 }
 .qui{
@@ -335,27 +410,7 @@ section{
     margin-top: 20px;
     margin-left: 20px;
 }
-.menu .contenu .box{
-    width: 370px;
-    margin: 20px;
-    border: 20px solid #fff;
-    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
-}
 
-.menu .contenu .box .imbox{
-    position: relative;
-    width: 100%;
-    height: 370px;
-}
-
-.menu .contenu .box .imbox img{
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-}
 .menu .contenu .medias{
     width: 350px;
     margin: 20px;
@@ -488,8 +543,6 @@ section{
 }
 
 .contact{
-    background-image: url(./images/OIP.jfif);
-    background-size: cover;
     box-shadow: 2px 2px 12px rgba(0,0,0, 0.8);
     width: 100%;
     background-position: unset;
@@ -536,7 +589,7 @@ section{
     resize: none;
 }
 
-.contactform .inputboite input[type="submit"]{
+.bouton{
     font-size: 1em;
     font-weight: 700;
     color: #ffff;
@@ -599,13 +652,17 @@ header.sticky li a:hover{
 .d-block{
     width: 100px;
 }
+
+
+/* slides */
+
 .slider{
     width: 1200px;
     height: 400px;
     overflow: hidden;
 }
 .slides{
-    width: calc(500px*7);
+    width: calc(500px*6);
     animation: glisse 10s infinite;
     margin-left: 5px;
 }
@@ -614,41 +671,26 @@ header.sticky li a:hover{
     margin: 5px;
 }
 .slider .slides .slide img{
-    width: 500px;
+    width: 400px;
 }
 @keyframes glisse{
     0%{
         transform: translateX(0);
     }
     
-    10%{
-        transform: translateX(-300px);
-    }
-    
     33%{
-        transform: translateX(-500px);
-    }
-    43%{
-        transform: translateX(-500px);
-    }
+        transform: translateX(-300px);
+    } 
     
     66%{
-        transform: translateX(-1000px);
+        transform: translateX(-700px);
     }  
-    76%{
-        transform: translateX(-1100px);
-    }
-    86%{
-        transform: translateX(-1300px);
-    }
-    96%{
-        transform: translateX(-1350px);
-    }
 
     100%{
-        transform: translateX(-500px);
+        transform: translateX(0);
     }
 }
+/* slides */
 .sliders{
     width: 1200px;
     height: 300px;
@@ -657,7 +699,7 @@ header.sticky li a:hover{
 }
 .slidesss{
     width: calc(500px*3);
-    animation: glisse 10s infinite;
+    animation: glisses 10s infinite;
 }
 .slidess{
     float:left;
@@ -665,7 +707,7 @@ header.sticky li a:hover{
 .sliders .slidesss .slidess img{
     width: 300px;
 }
-@keyframes glisse{
+@keyframes glisses{
     0%{
         transform: translateX(0);
     }
@@ -689,69 +731,14 @@ header.sticky li a:hover{
         transform: translateX(0);
     }
 }
-/* 
-.menu .titre .slider{
-    width: 2000px;
-    height: 600px;
-    overflow: hidden;
-    margin: 150px auto;
-}
-.menu .titre.slides{
-    width: calc(300px*17);
-    animation: glisse 10s infinite;
-}
-.menu .titre.slide{
-    float:left;
-}
-.slider .slides .slide img{
-    width: 300px;
-    margin: 5px;
-}
-@keyframes glisse{
-    0%{
-        transform: translateX(100px);
-    }
-    
-    5%{
-        transform: translateX(200px);
-    }    
-    10%{
-        transform: translateX(300px);
-    }
-    15%{
-        transform: translateX(400px);
-    }
-    20%{
-        transform: translateX(500px);
-    }
-    25%{
-        transform: translateX(600px);
-    }
-    
-    30%{
-        transform: translateX(700px);
-    }  
-    35%{
-        transform: translateX(800px);
-    }  
-    40%{
-        transform: translateX(900px);
-    }
-    45%{
-        transform: translateX(1000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-} */
 
 @media screen and (max-width: 1120px) {
-header, 
-header.sticky{
-    padding: 10px 20px;
-}
+
 .deca{
     width: 80px;
+    float:left;
+    top: 0%;
+    position: relative;
 }
 header .navbar li{
     margin-left: 0px;
@@ -801,13 +788,16 @@ header .navbar.active{
 
 .menuToggle{
     position: relative;
-    width: 40px;
+    width: 50px;
     height: 40px;
+    top: 0%;
     background-image: url(./images/menu.png);
     background-repeat: no-repeat;
     background-position: center;
     cursor: pointer;
     background-size: 30px;
+    float:right;
+    margin-top: 15px;
 }
 
 .menuToggle.active
@@ -824,21 +814,22 @@ header.sticky .menuToggle{
 .banniere{
     position: relative;
     width: 100%;
-    min-height:50vh;
+    min-height:20vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:flex-start;
     background-image:url(/images/Essaie.PNG);
-    background-size: cover;
 }
 .contenu p:nth-child(2){
     color: rgb(250, 245, 245);
 }
 .banniere .contenu h2{
+    margin-top: 6vw;
     font-size: 3em;
 }
 .banniere .contenu p{
-    font-size: 14px!important;
+    font-size: 13px!important;
+    color: #fdfdfc;
 }
 .row .col50 img{
     margin-left: 18%;
@@ -873,6 +864,7 @@ header.sticky .menuToggle{
 .temoignage h2{
     font-size: 2em;
     text-align: center;
+    margin-top: 20px;
 }
 
 .temoignage p{
@@ -897,53 +889,41 @@ text-align: center;
         flex-direction: column;
     }
     .slider{
-        width: 500px;
-        height: 400px;
+        width: 400px;
+        height: 200px;
         overflow: hidden;
     }
     .slides{
-        width: calc(700px*7);
+        width: calc(300px*5);
         animation: glisse 10s infinite;
         margin-left: 5px;
     }
     .slide{
         float:left;
-        margin: 5px;
+        margin: 2px;
     }
     .slider .slides .slide img{
-        width: 500px;
+        width: 200px;
+    }
+    .btn{
+      font-size: 12px;
     }
     @keyframes glisse{
         0%{
             transform: translateX(0);
         }
         
-        10%{
+        33%{
             transform: translateX(-300px);
         }
         
-        33%{
-            transform: translateX(-500px);
-        }
-        43%{
-            transform: translateX(-500px);
-        }
-        
         66%{
-            transform: translateX(-1000px);
+            transform: translateX(-600px);
         }  
-        76%{
-            transform: translateX(-1100px);
-        }
-        86%{
-            transform: translateX(-1300px);
-        }
-        96%{
-            transform: translateX(-1350px);
-        }
+
 
         100%{
-            transform: translateX(-500px);
+            transform: translateX(0);
         }
     }
     /* contact */
@@ -963,7 +943,7 @@ text-align: center;
     .sliders .slidesss .slidess img{
         width: 200px;
     }
-    @keyframes glisse{
+    @keyframes glisses{
         0%{
             transform: translateX(0);
         }
@@ -987,50 +967,6 @@ text-align: center;
             transform: translateX(0);
         }
     }
-/*     
-.menu .titre .slider{
-    width: 300px;
-    height: 100%;
-    overflow: hidden;
-    margin: 150px auto;
-}
-.menu .titre.slides{
-    width: calc(300px*4);
-    animation: glisse 10s infinite;
-}
-.menu .titre.slide{
-    float:left;
-}
-.menu .titre.slider .slides .slide img{
-    width: 300px;
-    margin-left: 5px;
-}
-@keyframes glisse{
-    0%{
-        transform: translateX(0);
-    }
-    
-    10%{
-        transform: translateX(0);
-    }
-    
-    33%{
-        transform: translateX(-500px);
-    }
-    43%{
-        transform: translateX(-500px);
-    }
-    
-    66%{
-        transform: translateX(-1000px);
-    }  
-    76%{
-        transform: translateX(-1000px);
-    }
-    100%{
-        transform: translateX(0);
-    }
-} */
 
 }
 @media screen and (max-width:560px){
@@ -1041,6 +977,7 @@ text-align: center;
         text-decoration: none;
     }
 }
+
 @media screen and (max-width: 480px)
 {
     .banniere .contenu h2{

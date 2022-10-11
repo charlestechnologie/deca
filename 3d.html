@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesss.css">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> -->
+
+</head>
+<body>
+            <!-- 3d slides -->
+            <div class="wrapper">
+                <div class="container">
+                  <div class="image-cube">
+                    <div class="front">
+                      <img src="/images/equipe1.jpg" >
+                    </div>
+                    <div class="right">
+                      <img src="/images/equipe2.jpg" >
+                    </div>
+                    <div class="back">
+                      <img src="/images/equipe3.jpg" >
+                    </div>
+                    <div class="left">
+                      <img src="/images/equipe4.jpg" >
+                    </div>
+                  </div>
+                </div>
+                <div class="btns">
+                  <button id="prev">
+                    <i class="fas fa-arrow-left"></i>
+                  </button>
+                  <button id="next">
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+              
+
+              <!-- 3d slides -->
+  <!-- <script src="/script.js"></script> -->
+  <script type="text/javascript">
+let cube =document.querySelector(".image-cube");
+let btnNext =document.getElementById("next");
+let btnPrev =document.getElementById("prev");
+
+let pos = 0;
+
+btnNext.addEventListener("click", () => {
+    pos -= 90;
+    cube.style.transform = 'rotateY(${pos}deg)';
+});
+btnPrev.addEventListener("click", () => {
+    pos += 90;
+    cube.style.transform = 'rotateY(${pos}deg)';
+});
+</script>
+</body>
+</html>
